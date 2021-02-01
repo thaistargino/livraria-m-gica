@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>Livraria magica</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+	<div id="login_div" class="main-div">
+    <h3>Livraria Mágica [firebase] </h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Senha..." id="password_field" />
+
+    <button onclick="login()">Entrar</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Bem vindo! </h3>
+    <p id="user_para">Bem vindo a Livraria mágica teste de longin com firebase! Você está logado.</p>
+    <button onclick="logout()">Sair</button>
+  </div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCYtOAb7vJ_eLbQn4-nb_qoF-HMRCV-KQI",
+    authDomain: "livraria-magica.firebaseapp.com",
+    projectId: "livraria-magica",
+    storageBucket: "livraria-magica.appspot.com",
+    messagingSenderId: "611353450467",
+    appId: "1:611353450467:web:fe86b822f00a30bfb0b2d6",
+    measurementId: "G-Q1XCWPG155"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="index.js"></script>
+  </body>
+</html>
